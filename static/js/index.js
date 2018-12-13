@@ -1,4 +1,3 @@
-var active_type = '';
 Vue.use(vant.Lazyload, { loading: '../static/images/loding.gif', error: '../static/images/404.jpg' });
 new Vue({
     el: '#app',
@@ -24,63 +23,38 @@ new Vue({
         notice: {
             text: ''
         },
-        list: [
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/05.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/07.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/12.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/06.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/08.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-            { id: 1, title: '我是标题', time: '2018-09-15', imgsrc: 'static/images/01.jpg', imglist: ['static/images/01.jpg', 'static/images/02.jpg', 'static/images/03.jpg'] },
-        ],
+        list: [],
         actions: [{
                 id: 'yse',
-                name: '亚洲色图',
-                count: 999
+                name: '亚洲色图'
             },
             {
                 id: 'tse',
-                name: '偷拍自拍',
-                count: 999
+                name: '偷拍自拍'
             },
             {
                 id: 'ose',
-                name: '欧美色图',
-                count: 999
+                name: '欧美色图'
             },
             {
                 id: 'qse',
-                name: '清纯唯美',
-                count: 999
+                name: '清纯唯美'
             },
             {
                 id: 'mse',
-                name: '美腿丝袜',
-                count: 999
+                name: '美腿丝袜'
             },
             {
                 id: 'sse',
-                name: '少妇熟女',
-                count: 999
+                name: '少妇熟女'
             },
             {
                 id: 'mxse',
-                name: '明星淫乱',
-                count: 999
+                name: '明星淫乱'
             },
             {
                 id: 'kse',
-                name: '卡通动漫',
-                count: 999
+                name: '卡通动漫'
             },
 
         ]
