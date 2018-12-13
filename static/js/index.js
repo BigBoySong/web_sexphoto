@@ -1,4 +1,4 @@
-Vue.use(vant.Lazyload, { loading: '../static/images/loding.gif', error: '../static/images/404.jpg' });
+Vue.use(vant.Lazyload, { loading: '../static/images/loding.gif', error: '../static/images/405.jpg' });
 new Vue({
     el: '#app',
     data: {
