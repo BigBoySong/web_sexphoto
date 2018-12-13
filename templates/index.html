@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/vant.min.css">
+    <link rel="stylesheet" href="static/css/index.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- 顶部导航栏 -->
+        <van-row>
+            <van-nav-bar :title="navbar.title" @click-right="onClickRight" fixed>
+                <van-icon name="wap-nav" slot="right" />
+            </van-nav-bar>
+        </van-row>
+
+        <!-- 网站通知插件 -->
+        <van-row>
+            <van-notice-bar mode="link" :text="notice.text" left-icon='static/images/icons/volume.png' />
+        </van-row>
+
+        <!-- 内容展示区域 -->
+        <van-row gutter="10">
+            <div style="text-align: -webkit-center;">
+                <van-col v-for="(item,index) in list" :key="index" span="24">
+                    <van-panel :id="item.id" @click="open_model(item.title,item.id,item.time)" :title="item.title" :status="item.time">
+                        <div width="100%">
+                            <img @click="open_model(item.title,item.id,item.time)" width="99%" v-lazy="item.imgsrc" />
+                        </div>
+                    </van-panel>
+                </van-col>
+            </div>
+        </van-row>
+        <van-row>
+            <van-popup v-model="show2">
+                <van-row>
+                    <van-cell :title="active_item_title" :value="active_item_time" />
+                </van-row>
+                <van-row class="img_contenr">
+                    <img v-for="img in imageList" v-lazy="img" width="99%">
+                </van-row>
+            </van-popup>
+        </van-row>
+
+        <!-- 部件:类型选择器 -->
+        <van-row>
+            <transition name="van-slide-up">
+                <van-actionsheet v-model="show" :actions="actions" @select="onSelect" />
+        </van-row>
+        <!-- 分页 -->
+        <van-row>
+            <van-pagination v-model="currentPage" :page-count="count" mode="simple" @change="pagination_change" />
+        </van-row>
+
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/vue.min.js"></script>
+    <script src="static/js/vant.min.js"></script>
+    <script src="static/js/index.js"></script>
+</body>
+
+</html>
